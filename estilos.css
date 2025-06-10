@@ -1,0 +1,24 @@
+
+body {
+    background-color: rgba(17, 109, 230, 0.623);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(104, 14, 221);
+    font-size: x-large;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 89%;
+    color: #333;
+}
+
+img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px gray;
+}
