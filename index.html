@@ -1,44 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Turismo en Malargüe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Turismo en Malargüe, Mendoza</h1>
-    <p>Malargüe es un destino turístico de gran valor en la provincia de Mendoza, Argentina. 
+    <header>
+        <h1>Turismo en Malargüe, Mendoza</h1>
+        <p>Malargüe es un destino turístico de gran valor en la provincia de Mendoza, Argentina. 
         Esta página muestra los principales atractivos:</p>
+    </header>
 
-    <h2>La Payunia</h2>
-    <img src="payunia_3.jfif" alt="La Payunia">
-    <img src="payunia.jfif" alt="La Payunia paisaje">
-    <img src="payunia2.jfif" alt="La Payunia paisaje">
+    <main>
+        <section>
+            <h2>La Payunia</h2>
+            <div class="galeria">
+                <img src="img/payunia_3.jfif" alt="La Payunia">
+                <img src="img/payunia.jfif" alt="La Payunia paisaje">
+                <img src="img/payunia2.jfif" alt="La Payunia paisaje">
+            </div>
+        </section>
 
-    <h2>Pozo de las Ánimas</h2>
-    <img src="pozo de las animas.jfif" alt="Pozo de las Ánimas">
+        <section>
+            <h2>Pozo de las Ánimas</h2>
+            <img src="img/pozo de las animas.jfif" alt="Pozo de las Ánimas">
+        </section>
 
-    <h2>Las Leñas</h2>
-    <img src="las leñas.jfif" alt="Centro de esquí Las Leñas">
+        <section>
+            <h2>Las Leñas</h2>
+            <img src="img/las leñas.jfif" alt="Centro de esquí Las Leñas">
+        </section>
 
-    <h2>Centro de Malargüe</h2>
-    <img src="ciudad.jfif" alt="Centro de Malargüe">
+        <section>
+            <h2>Centro de Malargüe</h2>
+            <img src="img/ciudad.jfif" alt="Centro de Malargüe">
+        </section>
 
-    <h2>Castillos de Pincheira</h2>
-    <img src="castillos.jfif" alt="Castillos de Pincheira">
+        <section>
+            <h2>Castillos de Pincheira</h2>
+            <img src="img/castillos.jfif" alt="Castillos de Pincheira">
+        </section>
 
-    <h2>Caverna de las Brujas</h2>
-    <img src="caverna_de_las_brujas.jfif" alt="Caverna de las Brujas">
+        <section>
+            <h2>Caverna de las Brujas</h2>
+            <img src="img/caverna_de_las_brujas.jfif" alt="Caverna de las Brujas">
+        </section>
 
-    <h2>Laguna de la Niña Encantada</h2>
-    <img src="Lag_Niña Encantada.jfif" alt="Laguna de la Niña Encantada">
-    <img src="Lag_Niña Encantada1.jfif" alt="Laguna de la Niña Encantada">
+        <section>
+            <h2>Laguna de la Niña Encantada</h2>
+            <div class="galeria">
+                <img src="img/Lag_Niña Encantada.jfif" alt="Laguna de la Niña Encantada">
+                <img src="img/Lag_Niña Encantada1.jfif" alt="Laguna de la Niña Encantada">
+            </div>
+        </section>
+    </main>
+
     <nav>
         <ul>
             <li><a href="flora.html">Flora de Malargüe</a></li>
             <li><a href="fauna.html">Fauna de Malargüe</a></li>
         </ul>
     </nav>
+
+    <button id="topBtn">⬆️ Volver arriba</button>
+
+    <script>
+        const btn = document.getElementById("topBtn");
+        window.onscroll = function () {
+            btn.style.display = (window.scrollY > 300) ? "block" : "none";
+        };
+        btn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
 </body>
 </html>
