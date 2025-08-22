@@ -51,20 +51,24 @@ nav .fa-solid {
     font-size: 1.1em;
     margin-right: 0.3em;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
     color: #333;
     line-height: 1.6;
+    min-height: 100vh;
 }
 
+
 header {
-    background-color: #2d3e50;
+    background: linear-gradient(90deg, #2d3e50 60%, #4f8cff 100%);
     color: #fff;
-    padding: 2rem;
+    padding: 2.5rem 1rem 2rem 1rem;
     text-align: center;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.10);
 }
 
 h1 {
@@ -77,10 +81,14 @@ h2 {
     margin-top: 2rem;
 }
 
+
 main {
-    padding: 1rem;
-    max-width: 1000px;
+    padding: 2rem 1rem 2rem 1rem;
+    max-width: 1200px;
     margin: auto;
+    background: rgba(255,255,255,0.85);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.08);
 }
 
 p, ul {
@@ -113,10 +121,12 @@ img {
     width: 300px;
 }
 
+
 nav {
-    background-color: #2d3e50;
-    padding: 1rem;
+    background: linear-gradient(90deg, #2d3e50 60%, #4f8cff 100%);
+    padding: 1.2rem 1rem;
     text-align: center;
+    box-shadow: 0 -2px 12px rgba(44,62,80,0.10);
 }
 
 nav ul {
@@ -141,24 +151,25 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
-#topBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    background: #2d3e50;
-    color: #fff;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 16px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+.tarjeta {
+    background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.10);
+    padding: 1.5rem 1rem 1rem 1rem;
+    max-width: 340px;
+    min-width: 260px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
-
-@media screen and (max-width: 900px) {
-    .tarjetas {
-        flex-direction: column;
+.tarjeta:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(44,62,80,0.18);
+    background: linear-gradient(135deg, #43c6ac 0%, #f8ffae 100%);
+}
         align-items: center;
     }
 }
